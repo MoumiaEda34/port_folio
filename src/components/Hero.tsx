@@ -58,7 +58,7 @@ export default function Hero() {
         className="md:ml-10 text-center md:text-left mt-6 md:mt-0"
       >
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide text-white">
-          I'm <span className="text-yellow-500">{profile.name}</span>
+          I am <span className="text-yellow-500">{profile.name}</span>
         </h1>
         <motion.p
           initial={{ opacity: 0 }}

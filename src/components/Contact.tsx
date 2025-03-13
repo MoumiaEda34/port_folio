@@ -48,7 +48,7 @@ export default function Contact() {
         <div className="text-center mb-8">
           <h2 className="text-4xl py-4 font-bold text-yellow-600"><span className="underline decoration-yellow-600">Contact</span> Me</h2>
           <Typography variant="body1" className="text-gray-600">
-            Let’s connect! Fill out the form below and I'll get back to you.
+            Lets connect! Fill out the form below and I will get back to you.
           </Typography>
         </div>
 
