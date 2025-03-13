@@ -1,0 +1,77 @@
+{
+  "profile": {
+    "name": "Moumita Ahamed",
+    "role": "Web Developer | Software Engineer",
+    "image": "/profile.png"
+  },
+  "about": {
+    "name": "Moumita Ahamed",
+    "dob": "05 July 1996",
+    "location": "Kolkata, India",
+    "email": "ahamed.moumita786@gmail.com",
+    "phone": "+91 6296168624",
+    "linkedin": "https://www.linkedin.com/in/moumita-ahamed/",
+    "description": "I am an experienced PHP developer with over 3 years of expertise in web application development, database optimization, and API integration. My journey in tech has expanded to include React.js and advanced JavaScript, allowing me to build scalable and interactive front-end experiences.",
+    "skills": [
+      {
+        "name": "PHP (CodeIgniter, Laravel)",
+        "icon": "WebIcon",
+        "color": "text-blue-500"
+      },
+      {
+        "name": "React.js, JavaScript (ES6+)",
+        "icon": "CodeIcon",
+        "color": "text-green-500"
+      },
+      {
+        "name": "MySQL, MongoDB",
+        "icon": "StorageIcon",
+        "color": "text-purple-500"
+      },
+      {
+        "name": "HTML, CSS, Tailwind CSS",
+        "icon": "WebIcon",
+        "color": "text-orange-500"
+      },
+      {
+        "name": "API Development & Integration",
+        "icon": "ApiIcon",
+        "color": "text-red-500"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Advanced JavaScript Development",
+      "description": "Building high-performance and scalable web applications using modern JavaScript (ES6+), TypeScript, and best practices.",
+      "icon": "CodeIcon",
+      "color": "text-yellow-600"
+    },
+    {
+      "title": "React.js Development",
+      "description": "Creating dynamic, responsive, and fast single-page applications (SPAs) with React.js, Next.js, and state management libraries like Redux and Zustand.",
+      "icon": "WebIcon",
+      "color": "text-blue-500"
+    },
+    {
+      "title": "PHP & Backend Development",
+      "description": "Developing secure and scalable server-side applications using PHP, Laravel, CodeIgniter, and RESTful API integration.",
+      "icon": "StorageIcon",
+      "color": "text-green-500"
+    },
+    {
+      "title": "API Development & Integration",
+      "description": "Building and integrating RESTful & GraphQL APIs for seamless communication between front-end and back-end applications.",
+      "icon": "ApiIcon",
+      "color": "text-red-500"
+    }
+  ],
+  "messages": [
+    {
+      "id": "5e1b",
+      "name": "moumitaahamed",
+      "email": "ahamed.moumita786@gmail.com",
+      "message": "moumita"
+    }
+  ]
+}
