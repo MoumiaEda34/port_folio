@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md py-4 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md py-4 z-50 uppercase">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-gray-600">My Portfolio</h1>

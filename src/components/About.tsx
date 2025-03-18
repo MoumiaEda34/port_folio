@@ -55,9 +55,9 @@ export default function About() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl font-extrabold text-yellow-600 text-center"
+        className="text-4xl font-extrabold text-gray-600 text-center"
       >
-        <span className="underline decoration-yellow-600">About</span> Me
+        <span className="underline decoration-gray-600">About</span> Me
       </motion.h2>
 
       {/* About Me Description */}
@@ -101,7 +101,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="bg-gray-100 p-6 rounded-lg shadow-md border-3 border-gray-500 border-dotted"
+          className="bg-gray-100 p-6 rounded-lg shadow-md border"
         >
           <h3 className="text-xl font-semibold text-blue-600 flex items-center">
             <LocationOn className="mr-2" /> Personal Details

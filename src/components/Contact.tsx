@@ -46,7 +46,7 @@ export default function Contact() {
       <Container maxWidth="sm">
         {/* Heading */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl py-4 font-bold text-yellow-600"><span className="underline decoration-yellow-600">Contact</span> Me</h2>
+          <h2 className="text-4xl py-4 font-bold text-gray-600"><span className="underline decoration-gray-600">Contact</span> Me</h2>
           <Typography variant="body1" className="text-gray-600">
             Lets connect! Fill out the form below and I will get back to you.
           </Typography>

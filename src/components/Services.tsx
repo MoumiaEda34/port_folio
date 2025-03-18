@@ -49,7 +49,7 @@ export default function Services() {
       id="services"
       className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white py-16 px-6"
     >
-      <h2 className="text-4xl font-bold text-yellow-600">My Services</h2>
+      <h2 className="text-4xl font-bold text-gray-600 shadow-text">My <span className="underline decoration-gray-600">Services</span></h2>
       <p className="mt-4 max-w-2xl text-center text-lg text-gray-300">
         I specialize in **Advanced JavaScript, React.js, and PHP development**
         to create high-performance, scalable web applications.
@@ -72,7 +72,7 @@ export default function Services() {
               >
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="mb-4">
-                    <IconComponent fontSize="large" />
+                  <IconComponent sx={{ fontSize: 80, width: 80, height: 80 }} />
                   </div>
                   <Typography variant="h5" className="font-bold text-blue-500">
                     {service.title}

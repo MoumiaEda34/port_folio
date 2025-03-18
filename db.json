@@ -2,7 +2,7 @@
   "profile": {
     "name": "Moumita Ahamed",
     "role": "Web Developer | Software Engineer",
-    "image": "/profile.png"
+    "image": "/profile.jpeg"
   },
   "about": {
     "name": "Moumita Ahamed",
@@ -45,25 +45,29 @@
       "title": "Advanced JavaScript Development",
       "description": "Building high-performance and scalable web applications using modern JavaScript (ES6+), TypeScript, and best practices.",
       "icon": "CodeIcon",
-      "color": "text-yellow-600"
+      "color": "text-yellow-600",
+      "id": "ae77"
     },
     {
       "title": "React.js Development",
       "description": "Creating dynamic, responsive, and fast single-page applications (SPAs) with React.js, Next.js, and state management libraries like Redux and Zustand.",
       "icon": "WebIcon",
-      "color": "text-blue-500"
+      "color": "text-blue-500",
+      "id": "b694"
     },
     {
       "title": "PHP & Backend Development",
       "description": "Developing secure and scalable server-side applications using PHP, Laravel, CodeIgniter, and RESTful API integration.",
       "icon": "StorageIcon",
-      "color": "text-green-500"
+      "color": "text-green-500",
+      "id": "2e55"
     },
     {
       "title": "API Development & Integration",
       "description": "Building and integrating RESTful & GraphQL APIs for seamless communication between front-end and back-end applications.",
       "icon": "ApiIcon",
-      "color": "text-red-500"
+      "color": "text-red-500",
+      "id": "6c91"
     }
   ],
   "messages": [
@@ -72,6 +76,12 @@
       "name": "moumitaahamed",
       "email": "ahamed.moumita786@gmail.com",
       "message": "moumita"
+    },
+    {
+      "id": "8544",
+      "name": "moumitaahamed",
+      "email": "ahamed.moumita786@gmail.com",
+      "message": "tgh"
     }
   ]
 }
