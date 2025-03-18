@@ -16,15 +16,15 @@ export const metadata: Metadata = {
   title: "Moumita Ahamed | Full-Stack Developer Portfolio",
   description: "Explore the professional portfolio of Moumita Ahamed, a skilled full-stack developer specializing in Next.js, React, and modern web technologies.",
   keywords: ["Moumita Ahamed", "Portfolio", "Full Stack Developer", "Next.js", "React", "Web Developer"],
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://port-folio-qzvn.vercel.app/"),
   openGraph: {
     title: "Moumita Ahamed | Full-Stack Developer",
     description: "Explore the professional projects and skills of Moumita Ahamed.",
-    url: "https://yourdomain.com",
+    url: "https://port-folio-qzvn.vercel.app/",
     siteName: "Moumita Ahamed Portfolio",
     images: [
       {
-        url: "https://yourdomain.com/og-image.png", // Replace with your OG image
+        url: "https://port-folio-qzvn.vercel.app/og-image.png", // Replace with your OG image
         width: 1200,
         height: 630,
         alt: "Moumita Ahamed Portfolio",
