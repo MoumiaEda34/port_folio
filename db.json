@@ -2,7 +2,7 @@
   "profile": {
     "name": "Moumita Ahamed",
     "role": "Web Developer | Software Engineer",
-    "image": "/profile.jpeg"
+    "image": "/profile.png"
   },
   "about": {
     "name": "Moumita Ahamed",
@@ -82,6 +82,12 @@
       "name": "moumitaahamed",
       "email": "ahamed.moumita786@gmail.com",
       "message": "tgh"
+    },
+    {
+      "id": "1be4",
+      "name": "moumitaahamed",
+      "email": "ahamed.moumita786@gmail.com",
+      "message": "hi"
     }
   ]
 }

@@ -25,14 +25,14 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md py-4 z-50 uppercase">
+    <nav className="fixed top-0 left-0 w-full bg-white py-4 z-50 uppercase">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-gray-600">My Portfolio</h1>
+        <h1 className="text-2xl font-bold text-purple-600">My Portfolio.</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          {["home", "about", "services", "contact"].map((section) => (
+          {["home", "services", "about", "my work", "contact"].map((section) => (
             <Link
               key={section}
               href={`#${section}`}
@@ -40,8 +40,8 @@ export default function Navbar() {
                 e.preventDefault();
                 scrollToSection(section);
               }}
-              className={`text-lg font-medium transition-colors ${
-                active === section ? "text-gray-600 font-semibold" : "text-gray-600 hover:text-gray-600"
+              className={`text-base font-medium transition-colors ${
+                active === section ? "text-purple-600 font-semibold" : "text-gray-600 hover:text-gray-600"
               }`}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -49,12 +49,12 @@ export default function Navbar() {
           ))}
 
           {/* Resume Link */}
-         <Link
+         {/* <Link
             href="/resume"
             className="text-lg font-medium text-gray-600 hover:text-blue-600 transition-colors"
           >
             Resume
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -74,12 +74,12 @@ export default function Navbar() {
             className: "bg-white shadow-lg rounded-lg mt-2",
           }}
         >
-          {["home", "about", "services", "contact"].map((section) => (
+          {["home", "about", "services","my work", "contact"].map((section) => (
             <MenuItem
               key={section}
               onClick={() => scrollToSection(section)}
               className={`text-lg font-medium ${
-                active === section ? "text-blue-600 font-semibold" : "text-gray-700"
+                active === section ? "text-blue-600 font-semibold" : "text-purple-700"
               }`}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}

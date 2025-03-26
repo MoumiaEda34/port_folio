@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -30,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-white-900 text-white">
       {/* SEO Meta & JSON-LD Schema */}
       <Head>
         <title>Moumita Ahamed | Full-Stack Developer Portfolio</title>
@@ -65,8 +66,9 @@ export default function Home() {
       {/* Website Sections */}
       <Navbar />
       <Hero />
-      <About />
       <Services />
+      <About />
+      <Projects/>
       <Contact />
       <Footer />
     </div>

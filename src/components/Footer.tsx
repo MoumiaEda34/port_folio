@@ -8,13 +8,15 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8">
+    <footer className="shadow-lg text-gray-700 py-8" style={{
+      background: "linear-gradient(to bottom right, skyblue, purple)",
+    }}>
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         
         {/* Logo & Copyright */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-bold text-blue-400">My Portfolio</h2>
-          <p className="text-sm mt-2">© {new Date().getFullYear()} All Rights Reserved.</p>
+          <h2 className="text-xl font-bold text-purple-800">My Portfolio</h2>
+          <p className="text-sm mt-2 text-gray-300">© {new Date().getFullYear()} All Rights Reserved.</p>
         </div>
 
         {/* Quick Links */}
@@ -23,7 +25,7 @@ export default function Footer() {
             <a
               key={section}
               href={`#${section}`}
-              className="hover:text-blue-400 transition-colors"
+              className="hover:text-purple-300 transition-colors text-gray-200"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>
@@ -32,17 +34,37 @@ export default function Footer() {
 
         {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <IconButton color="primary" component="a" href="https://facebook.com" target="_blank">
-            <FacebookIcon />
+          <IconButton
+            color="inherit"
+            component="a"
+            href="https://facebook.com"
+            target="_blank"
+          >
+            <FacebookIcon className="text-purple-200" />
           </IconButton>
-          <IconButton color="primary" component="a" href="https://twitter.com" target="_blank">
-            <TwitterIcon />
+          <IconButton
+            color="inherit"
+            component="a"
+            href="https://twitter.com"
+            target="_blank"
+          >
+            <TwitterIcon className="text-purple-200" />
           </IconButton>
-          <IconButton color="primary" component="a" href="https://linkedin.com" target="_blank">
-            <LinkedInIcon />
+          <IconButton
+            color="inherit"
+            component="a"
+            href="https://linkedin.com"
+            target="_blank"
+          >
+            <LinkedInIcon className="text-purple-200" />
           </IconButton>
-          <IconButton color="primary" component="a" href="https://github.com" target="_blank">
-            <GitHubIcon />
+          <IconButton
+            color="inherit"
+            component="a"
+            href="https://github.com"
+            target="_blank"
+          >
+            <GitHubIcon className="text-purple-200" />
           </IconButton>
         </div>
       </div>

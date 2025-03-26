@@ -1,7 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { TextField, Button, Card, CardContent, Typography, Container } from "@mui/material";
+import {
+  TextField,
+  Button,
+  Card,
+  CardContent,
+  Typography,
+  Container,
+  Grid,
+  Box,
+} from "@mui/material";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -42,62 +51,108 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col items-center justify-center bg-white py-16 px-6">
-      <Container maxWidth="sm">
-        {/* Heading */}
-        <div className="text-center mb-8">
-          <h2 className="text-4xl py-4 font-bold text-gray-600"><span className="underline decoration-gray-600">Contact</span> Me</h2>
-          <Typography variant="body1" className="text-gray-600">
-            Lets connect! Fill out the form below and I will get back to you.
-          </Typography>
-        </div>
+    <section
+      id="contact"
+      className="min-h-screen flex items-center justify-center py-16 px-6"
+    >
+      <Container maxWidth="md">
+        <Card elevation={6} sx={{ borderRadius: 4, overflow: "hidden" }}>
+          <Grid container>
+            {/* Left Panel - Image & Info */}
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                backgroundColor: "#7e22ce",
+                color: "#fff",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                p: 4,
+              }}
+            >
+              <img
+                src="/contact.jpg"
+                alt="Contact Us"
+                style={{ width: "80%", marginBottom: "20px" }}
+              />
+              <Typography variant="h4" fontWeight="bold" gutterBottom>
+                Get In Touch
+              </Typography>
+              <Typography variant="body1" textAlign="center">
+                I'm always open to discuss new projects or opportunities.
+              </Typography>
+            </Grid>
 
-        {/* Contact Form */}
-        <Card className="bg-white shadow-md border border-gray-200">
-          <CardContent className="p-6">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <TextField
-                label="Your Name"
-                variant="outlined"
-                fullWidth
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-              <TextField
-                label="Your Email"
-                variant="outlined"
-                fullWidth
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-              <TextField
-                label="Your Message"
-                variant="outlined"
-                fullWidth
-                multiline
-                rows={4}
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-              <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                fullWidth
-                disabled={loading}
-                className="bg-blue-600 hover:bg-blue-700 text-white"
-              >
-                {loading ? "Sending..." : "Send Message"}
-              </Button>
-            </form>
-          </CardContent>
+            {/* Right Panel - Form */}
+            <Grid item xs={12} md={6}>
+              <CardContent sx={{ p: 4 }}>
+                <Typography
+                  variant="h5"
+                  fontWeight="bold"
+                  gutterBottom
+                  color="primary"
+                >
+                  Contact Me
+                </Typography>
+                <Typography variant="body2" color="textSecondary" mb={3}>
+                  Fill out the form below and I'll get back to you shortly.
+                </Typography>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <TextField
+                    label="Your Name"
+                    variant="outlined"
+                    fullWidth
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                  <TextField
+                    label="Your Email"
+                    variant="outlined"
+                    fullWidth
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                  <TextField
+                    label="Your Message"
+                    variant="outlined"
+                    fullWidth
+                    multiline
+                    rows={4}
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  />
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    fullWidth
+                    sx={{
+                      backgroundColor: "#9333ea",
+                      color: "#fff",
+                      fontWeight: "bold",
+                      borderRadius: "8px",
+                      textTransform: "capitalize",
+                      "&:hover": {
+                        backgroundColor: "#7e22ce",
+                      },
+                    }}
+                    disabled={loading}
+                  >
+                    {loading ? "Sending..." : "Send Message"}
+                  </Button>
+                </form>
+              </CardContent>
+            </Grid>
+          </Grid>
         </Card>
       </Container>
     </section>
