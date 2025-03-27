@@ -9,7 +9,6 @@ import {
   Typography,
   Container,
   Grid,
-  Box,
 } from "@mui/material";
 
 export default function Contact() {
@@ -82,7 +81,7 @@ export default function Contact() {
                 Get In Touch
               </Typography>
               <Typography variant="body1" textAlign="center">
-                I'm always open to discuss new projects or opportunities.
+                I am always open to discuss new projects or opportunities.
               </Typography>
             </Grid>
 
@@ -98,7 +97,7 @@ export default function Contact() {
                   Contact Me
                 </Typography>
                 <Typography variant="body2" color="textSecondary" mb={3}>
-                  Fill out the form below and I'll get back to you shortly.
+                  Fill out the form below and I will get back to you shortly.
                 </Typography>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <TextField

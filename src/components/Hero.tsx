@@ -40,7 +40,7 @@ export default function Hero() {
         {/* Tagline */}
         <div className="flex items-center gap-2 text-lg font-medium text-gray-700 mb-4">
           <span className="w-10 h-1 bg-purple-600 inline-block rounded"></span>
-          Let's Build Together <FaRegHandPeace className="ml-1 text-purple-600 text-xl" />
+          Let &apos; s Build Together <FaRegHandPeace className="ml-1 text-purple-600 text-xl" />
         </div>
 
         {/* Heading */}
